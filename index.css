@@ -1,0 +1,69 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #333;
+}
+
+ul.navbar li {
+    float: left;
+}
+
+ul.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.navbar li a:hover {
+    background-color: #111;
+}
+
+h1.hometext {
+    background-color: pink;
+    padding: 2;
+    margin: 0;
+    text-decoration: none;
+}
+
+.openclose {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    margin: 7px;
+}
+
+.opentimes {
+    padding: 7px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0.5em;
+    list-style: none;
+}
+
+.openingimage {
+    background-image: url('images/openingtimes.jpg');
+}
+
+.content {
+    background-color: #333;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+
