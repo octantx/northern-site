@@ -2,6 +2,7 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
+    height: 100%;
 }
 
 ul.navbar {
@@ -35,35 +36,47 @@ h1.hometext {
     text-decoration: none;
 }
 
-.openclose {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5em;
-    margin: 7px;
+.openingimage {
+    background-image: url("images/openingtimes.jpg");
+    filter: blur(7px);
+    -webkit-filter: blur(7px);
+    height: 55%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.openingcontent {
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 15px;
+    text-align: center;
+    margin: 0.6em 0;
+    background-color: #333;
+    border-radius: 5em;
+    border: 2px solid #fff;
+    max-width: 480px;
+
 }
 
 .opentimes {
-    padding: 7px;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 0.5em;
     list-style: none;
-}
-
-.openingimage {
-    background-image: url('images/openingtimes.jpg');
-}
-
-.content {
-    background-color: #333;
-    padding: 0;
     margin: 0;
-    color: #fff;
+    padding: 7px;
 }
 
+.openclose {
+    margin: 7px;
+    padding: 0;
+}
+
+#isopen {
+    color: rgb(255, 166, 0);
+}
