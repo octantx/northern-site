@@ -136,6 +136,7 @@ h1.hometext a {
     border: 3px solid rgb(34, 34, 34);
     border-radius: 50%;
     margin: 10px;;
+    justify-content: center;
 }
 
 .about, .contact{
