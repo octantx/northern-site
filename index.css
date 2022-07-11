@@ -123,28 +123,35 @@ h1.hometext a {
     color: rgb(255, 166, 0);
 }
 
-.aboutheader, .contactheader {
+.aboutheader, .contactheader, .newsheader {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     margin: 0;
     padding: 20px;
+    background-color: rgb(34, 34, 34);
+    border-radius: 2%;
+    margin: 30px;
 }
 
 .dividingline {
     border: 3px solid rgb(34, 34, 34);
     border-radius: 50%;
-    margin: 10px;;
+    margin: 10px;
     justify-content: center;
 }
 
-.about, .contact{
+.about, .contact, .news{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    background-color: rgb(34, 34, 34);
+    border-radius: 2%;
+    margin: 30px;
 }
+
 
 .contact {
     flex-direction: row-reverse;
@@ -179,4 +186,13 @@ h1.hometext a {
     word-wrap: break-word;
     width: 550px;
     text-align: center;
+}
+
+@media screen and (max-width: 600px){  
+    .about, .contact, .news {
+        flex-direction: column;
+        font-size: 60%;
+        text-align: center;
+        justify-content: center;
+    }
 }
